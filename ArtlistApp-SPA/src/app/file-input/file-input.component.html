@@ -1,0 +1,15 @@
+<div class="input-group mb-3">
+  <div class="custom-file">
+    <input type="file" #file class="custom-file-input" id="inputGroupFile02" (change)="fileChangeEvent($event)">
+    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">{{fileName}}</label>
+  </div>
+  <div class="input-group-append">
+    <span class="input-group-text cursor-pointer" id="magic-btn" (click)="uploadFile(file.files)">Do The Magic</span>
+  </div>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <div style="text-align: center">
+    <h1 class="main_title">ArtlistApp</h1>
+    <p class="lead text_config">4K Video Converter</p>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <app-file-input (onUploadFinished)="setUploadResponse($event)"></app-file-input>
+      </div>
+      <div class="col-12">
+        <!-- <app-thumbnail-list></app-thumbnail-list> -->
+        <app-path-list *ngIf="uploadResponse != undefined"></app-path-list>
+      </div>
+    </div>
+  </div>
+</div>

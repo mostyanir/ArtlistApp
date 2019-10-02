@@ -1,0 +1,16 @@
+<div class="list">
+  <h4 class="subtitle">Generated Thumbnails</h4> 
+  <div class="col-12 path" *ngFor="let snapshot of uploadResponse.snapshots">
+    <p>{{snapshot}}</p>
+  </div>
+
+  <h4 class="subtitle">HD H264</h4>
+  <div class="col-12 path">
+    <p>{{uploadResponse.h264Url}}</p>
+  </div>
+
+  <h4 class="subtitle">Multibit rate HLS files</h4>
+  <div class="col-12 path">
+    <p>{{uploadResponse.m3u8Path}}</p>
+  </div>
+</div>
